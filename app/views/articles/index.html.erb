@@ -1,8 +1,8 @@
 <div class="container">
-  <div class="row">
+  <div class="row mb-3">
     <div class="col-sm-8 col-sm-offset-2">
         <%@articles.each do |article|%>
-            <article>
+            <article class="mb-2">
                 <h2> 
                   <%= link_to article.title, article_path(article) %>
                     <%= link_to fa_icon("film"),
@@ -10,6 +10,7 @@
                 </h2>
                 <%= article.content %>
             </article>
+            <hr>
         <% end %>
     </div>
   </div>
